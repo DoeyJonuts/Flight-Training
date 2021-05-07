@@ -20,6 +20,11 @@ function timeToString(time) {
     if(formattedSS == 2){
       currentTech.innerText = tech1.innerHTML;
     }
+
+    let i = 0;
+    for(i = 0; i < 10; i++){
+      
+    }
   
     return `${formattedMM}:${formattedSS}:${formattedMS}`;
   }
