@@ -17,13 +17,16 @@ function timeToString(time) {
     let formattedSS = ss.toString().padStart(2, "0");
     let formattedMS = ms.toString().padStart(2, "0");
 
-    if(formattedSS == 2){
+    if(formattedMM == 0 && formattedSS == 2){
       currentTech.innerText = tech1.innerHTML;
+    }
+    if (formattedMM == 0 && formattedSS == 4){
+      currentTech.innerText = tech2.innerHTML;
     }
 
     let i = 0;
     for(i = 0; i < 10; i++){
-      
+
     }
   
     return `${formattedMM}:${formattedSS}:${formattedMS}`;
