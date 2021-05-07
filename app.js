@@ -16,6 +16,10 @@ function timeToString(time) {
     let formattedMM = mm.toString().padStart(2, "0");
     let formattedSS = ss.toString().padStart(2, "0");
     let formattedMS = ms.toString().padStart(2, "0");
+
+    if(formattedSS == 2){
+      currentTech.innerText = tech1.innerHTML;
+    }
   
     return `${formattedMM}:${formattedSS}:${formattedMS}`;
   }
@@ -25,7 +29,21 @@ function timeToString(time) {
   let startTime;
   let elapsedTime = 0;
   let timerInterval;
-  
+
+  const currentTech =  document.querySelector("#currentTech");
+  const tech1 = document.querySelector("#tech1");
+  const tech2 = document.querySelector("#tech2");
+  const tech3 = document.querySelector("#tech3");
+  const tech4 = document.querySelector("#tech4");
+  const tech5 = document.querySelector("#tech5");
+  const tech6 = document.querySelector("#tech6");
+  const tech7 = document.querySelector("#tech7");
+  const tech8 = document.querySelector("#tech8");
+  const tech9= document.querySelector("#tech9");
+  const tech10 = document.querySelector("#tech10");
+  const tech11 = document.querySelector("#tech11");
+
+
   // Create function to modify innerHTML
   
   function print(txt) {
@@ -53,6 +71,7 @@ function timeToString(time) {
     print("00:00:00");
     elapsedTime = 0;
     showButton("PLAY");
+    currentTech.innerHTML = "Current Tech";
   }
   
   // Create function to display buttons
@@ -74,16 +93,3 @@ function timeToString(time) {
   resetButton.addEventListener("click", reset);
 
   //Testing
-
-    //Display Current Tech
-
-  const currentTech =  document.querySelector("#currentTech");
-  const tech1 = document.querySelector("#tech1");
-
-  function displayCurrentTech(){
-    if(txt = 1){
-        document.getElementById(currentTech).innerHTML = tech1.innerHTML;
-        }
-  }
-
-  displayCurrentTech();
