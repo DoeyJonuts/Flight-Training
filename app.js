@@ -1,5 +1,6 @@
 // Convert time to a format of hours, minutes, seconds, and milliseconds
 let j = 1;
+let k = 0;
 
 function timeToString(time) {
 
@@ -21,74 +22,77 @@ function timeToString(time) {
 
     //list of techs and their time intervals
 
+    function changeCurrentTech(){
+      currentTech.innerHTML = techList[k].innerHTML;
+      k++;
+    }
+
     function nextVideo(){
       video.removeChild(source);
       source.setAttribute('src', techVideos[j]);
       video.appendChild(source);
       video.load();
-      video.play();
       j++;
       console.log(j);
     }
 
-    if(formattedMM == 0 && formattedSS == 01 && formattedMS == 02){
-      currentTech.innerHTML = techList[0].innerHTML;
+    if(formattedMM === "00" && formattedSS === "00" && formattedMS === "10"){
+      changeCurrentTech();
       source.setAttribute('src', techVideos[0]);
       video.appendChild(source);
       video.load();
-      video.play();
       console.log(j);
     }
-    if (formattedMM == 0 && formattedSS == 4 && formattedMS == 02){
-      currentTech.innerHTML = techList[1].innerHTML;
+    if (formattedMM === "00" && formattedSS === "01" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }
-    if (formattedMM == 0 && formattedSS == 6 && formattedMS == 02){
-      currentTech.innerHTML = techList[2].innerHTML;
+    if (formattedMM === "00" && formattedSS === "02" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 8 && formattedMS == 02){
-      currentTech.innerHTML = techList[3].innerHTML;
+    if (formattedMM === "00" && formattedSS === "03" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 10 && formattedMS == 02){
-      currentTech.innerHTML = techList[4].innerHTML;
+    if (formattedMM === "00" && formattedSS === "04" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 12 && formattedMS == 02){
-      currentTech.innerHTML = techList[5].innerHTML;
+    if (formattedMM === "00" && formattedSS === "05" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 14 && formattedMS == 02){
-      currentTech.innerHTML = techList[6].innerHTML;
+    if (formattedMM === "00" && formattedSS === "06" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 16 && formattedMS == 02){
-      currentTech.innerHTML = techList[7].innerHTML;
+    if (formattedMM === "00" && formattedSS === "07" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 18 && formattedMS == 02){
-      currentTech.innerHTML = techList[8].innerHTML;
+    if (formattedMM === "00" && formattedSS === "08" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 20 && formattedMS == 02){
-      currentTech.innerHTML = techList[9].innerHTML;
+    if (formattedMM === "00" && formattedSS === "09" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 22 && formattedMS == 02){
-      currentTech.innerHTML = techList[10].innerHTML;
+    if (formattedMM === "00" && formattedSS === "10" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 24 && formattedMS == 02){
-      currentTech.innerHTML = techList[11].innerHTML;
+    if (formattedMM === "00" && formattedSS === "11" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 26 && formattedMS == 02){
-      currentTech.innerHTML = techList[12].innerHTML;
+    if (formattedMM === "00" && formattedSS === "12" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM == 0 && formattedSS == 28 && formattedMS == 02){
-      currentTech.innerHTML = techList[13].innerHTML;
+    if (formattedMM === "00" && formattedSS === "13" && formattedMS === "10"){
+      changeCurrentTech();
       nextVideo();
     }    
 
@@ -172,6 +176,7 @@ function timeToString(time) {
     currentTech.innerHTML = "Press Play to Start";
     video.pause();
     j = 1;
+    k = 0;
   }
   
   // Create function to display buttons
