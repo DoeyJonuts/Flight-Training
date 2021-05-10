@@ -3,6 +3,7 @@ Features
     - Leave additional time at the end to practice missed tech again
     - Include GIFs of current tech being practiced
     - Be able to highlight tech thats being missed and saved for later
+    - Can use a switch statement or an array with each time as an index to simplify code
 
 Concerns
     - Do we need to organize based on difficulty? How do we categorize ledegwork?

@@ -19,56 +19,70 @@ function timeToString(time) {
     let formattedMS = ms.toString().padStart(2, "0");
 
     //list of techs and their time intervals
-    if(formattedMM == 0 && formattedSS == 2){
-      currentTech.innerHTML = tech1.innerHTML;
+    // if(formattedMM == 0 && formattedSS == 0){
+    //   currentTech.innerHTML = tech1.innerHTML;
+    // }
+    // if (formattedMM == 0 && formattedSS == 4){
+    //   currentTech.innerHTML = tech2.innerHTML;
+    // }
+    // if (formattedMM == 0 && formattedSS == 6){
+    //   currentTech.innerHTML = tech3.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 8){
+    //   currentTech.innerHTML = tech4.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 10){
+    //   currentTech.innerHTML = tech5.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 12){
+    //   currentTech.innerHTML = tech6.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 14){
+    //   currentTech.innerHTML = tech7.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 16){
+    //   currentTech.innerHTML = tech8.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 18){
+    //   currentTech.innerHTML = tech9.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 20){
+    //   currentTech.innerHTML = tech9.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 22){
+    //   currentTech.innerHTML = tech10.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 24){
+    //   currentTech.innerHTML = tech11.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 26){
+    //   currentTech.innerHTML = tech12.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 28){
+    //   currentTech.innerHTML = tech13.innerHTML;
+    // }    
+    // if (formattedMM == 0 && formattedSS == 30){
+    //   currentTech.innerHTML = tech14.innerHTML;
+    // }    
+
+
+    function changeCurrentTech(){
+
+      for(i = 0; i<techList.length; i++){
+        if((formattedSS == 2) || (formattedSS == 4)){
+          currentTech.innerHTML = techList[i].innerHTML;
+        }
+        if((formattedSS == 3) || (formattedSS == 5)) {
+          currentTech.innerHTML = techList[i].innerHTML;
+        }
+      }
     }
-    if (formattedMM == 0 && formattedSS == 4){
-      currentTech.innerHTML = tech2.innerHTML;
-    }
-    if (formattedMM == 0 && formattedSS == 6){
-      currentTech.innerHTML = tech3.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 8){
-      currentTech.innerHTML = tech4.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 10){
-      currentTech.innerHTML = tech5.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 12){
-      currentTech.innerHTML = tech6.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 14){
-      currentTech.innerHTML = tech7.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 16){
-      currentTech.innerHTML = tech8.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 18){
-      currentTech.innerHTML = tech9.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 20){
-      currentTech.innerHTML = tech9.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 22){
-      currentTech.innerHTML = tech10.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 24){
-      currentTech.innerHTML = tech11.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 26){
-      currentTech.innerHTML = tech12.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 28){
-      currentTech.innerHTML = tech13.innerHTML;
-    }    
-    if (formattedMM == 0 && formattedSS == 30){
-      currentTech.innerHTML = tech14.innerHTML;
-    }    
+
+    changeCurrentTech();
 
     return `${formattedMM}:${formattedSS}:${formattedMS}`;
       }
 
-  
   // Declare variables to use in our functions below
   
   let startTime;
@@ -91,6 +105,7 @@ function timeToString(time) {
   const tech13 = document.querySelector("#tech13");
   const tech14 = document.querySelector("#tech14");
 
+  let techList = [tech1, tech2, tech3, tech4, tech5, tech6,  tech7, tech8, tech9, tech10, tech11, tech12, tech13, tech14]
 
   // Create function to modify innerHTML
   
@@ -119,7 +134,7 @@ function timeToString(time) {
     print("00:00:00");
     elapsedTime = 0;
     showButton("PLAY");
-    currentTech.innerHTML = "Current Tech";
+    currentTech.innerHTML = "Press Play to Start";
   }
   
   // Create function to display buttons
