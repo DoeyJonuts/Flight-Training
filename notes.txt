@@ -1,7 +1,15 @@
+Features
+    - Timer displaying current practicing tech
+    - Leave additional time at the end to practice missed tech again
+    - Include GIFs of current tech being practiced
+    - Be able to highlight tech thats being missed and saved for later
 
+Concerns
+    - Do we need to organize based on difficulty? How do we categorize ledegwork?
+    - Do we create separate pages based on difficulty?
+    - How do we capture the tech that was missed? Do we highlight it? Append to final timer? do we just let the user keep track?
 
-https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/
+Future Features
+    - Daily Streak Tracker for each user
+    - Edit tech training list
 
-
-- Build a HIIT timer with html, css, and js
-https://www.youtube.com/watch?v=-cq--miq5NIhttps://www.youtube.com/watch?v=-cq--miq5NI

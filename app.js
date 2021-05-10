@@ -20,64 +20,49 @@ function timeToString(time) {
 
     //list of techs and their time intervals
     if(formattedMM == 0 && formattedSS == 2){
-      console.log(tech1.innerHTML);
-      currentTech.innerText = tech1.innerHTML;
+      currentTech.innerHTML = tech1.innerHTML;
     }
     if (formattedMM == 0 && formattedSS == 4){
-      console.log(tech2.innerHTML);
-      currentTech.innerText = tech2.innerHTML;
+      currentTech.innerHTML = tech2.innerHTML;
     }
     if (formattedMM == 0 && formattedSS == 6){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech3.innerHTML;
+      currentTech.innerHTML = tech3.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 8){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech4.innerHTML;
+      currentTech.innerHTML = tech4.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 10){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech5.innerHTML;
+      currentTech.innerHTML = tech5.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 12){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech6.innerHTML;
+      currentTech.innerHTML = tech6.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 14){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech7.innerHTML;
+      currentTech.innerHTML = tech7.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 16){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech8.innerHTML;
+      currentTech.innerHTML = tech8.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 18){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech9.innerHTML;
+      currentTech.innerHTML = tech9.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 20){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech9.innerHTML;
+      currentTech.innerHTML = tech9.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 22){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech10.innerHTML;
+      currentTech.innerHTML = tech10.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 24){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech11.innerHTML;
+      currentTech.innerHTML = tech11.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 26){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech12.innerHTML;
+      currentTech.innerHTML = tech12.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 28){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech13.innerHTML;
+      currentTech.innerHTML = tech13.innerHTML;
     }    
     if (formattedMM == 0 && formattedSS == 30){
-      console.log(tech3.innerHTML);
-      currentTech.innerText = tech14.innerHTML;
+      currentTech.innerHTML = tech14.innerHTML;
     }    
 
     return `${formattedMM}:${formattedSS}:${formattedMS}`;
@@ -99,7 +84,7 @@ function timeToString(time) {
   const tech6 = document.querySelector("#tech6");
   const tech7 = document.querySelector("#tech7");
   const tech8 = document.querySelector("#tech8");
-  const tech9= document.querySelector("#tech9");
+  const tech9 = document.querySelector("#tech9");
   const tech10 = document.querySelector("#tech10");
   const tech11 = document.querySelector("#tech11");
   const tech12 = document.querySelector("#tech12");

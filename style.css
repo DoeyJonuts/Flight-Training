@@ -13,6 +13,10 @@ body {
     padding: 0 64px;
     margin: 0;
   }
+
+  nav {
+    margin-bottom: 2rem;
+  }
   
   .stopwatch {
     display: grid;
@@ -69,4 +73,9 @@ body {
   
   #pauseButton {
     display: none;
+  }
+
+  #currentTech {
+    font-size: 2rem;
+    text-align: center;
   }

@@ -7,14 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
-    <title>Lombardi Timer</title>
+    <title>The Lombardi Project</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">The Lombardi Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tech Skill Practice
+              </a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Beginner</a>
+                <a class="dropdown-item" href="#">Intermediate</a>
+                <a class="dropdown-item" href="#">Expert</a>
+                <a class="dropdown-item" href="#">Ledgework</a>
+                <a class="dropdown-item" href="#">Everything</a>
+                <a class="dropdown-item" href="#">Randomizer</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Want to support?</a>
+              </li>  
+          </ul>
+        </div>
+      </nav>
     <div class="container">
         <div class="row">
             <div class="col-6">
                 <div>
-                    <h2>Beginner</h2>
+                    <div>
+                        <h2>Beginner</h2>
                         <ol>
                             <li id="tech1">Dash dance</li>
                             <li id="tech2">Wavedash </li>
@@ -24,6 +54,7 @@
                             <li id="tech6">JC Grab</li>
                             <li id="tech7">Wavedash OOS</li>
                         </ol>
+                    </div>
                     <div>
                         <h2>Intermediate</h2>
                         <ol>
@@ -59,27 +90,36 @@
                 </div>
             </div>
             <div class="col-6">
-                <div class="stopwatch">
-                    <h1><span class="gold">Lombardi</span> Timer</h1>
-                    <div>
-                    <span class="time" id="display">00:00:00</span>
-                    <h2><span id="currentTech">Current Tech</span></h2>
-                    </div> 
-                    <div class="controls">
-                        <button class="buttonPlay">
-                            <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
-                
-                            <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
-                        </button>
-                
-                        <button class="buttonReset">
-                            <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
-                        </button>
+                <div class="row">
+                    <div class="stopwatch row justify-content-center">
+                        <h1><span class="gold">Lombardi</span> Timer</h1>
+                        <div>
+                        <div class="time row justify-content-center" id="display">00:00:00</div>
+                        <div class="row justify-content-center" id="currentTech">Current Tech</div>
+                        </div> 
+                        <div class="controls">
+                            <button class="buttonPlay">
+                                <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+                    
+                                <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+                            </button>
+                    
+                            <button class="buttonReset">
+                                <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+                            </button>
+                        </div>
                     </div>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <video controls autoplay src="https://www.youtube.com/watch?v=KSPBZSZMxyU"></video>
                 </div>
             </div>
         </div>
     </div>
     <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
