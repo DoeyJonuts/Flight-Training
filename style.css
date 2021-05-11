@@ -18,6 +18,11 @@ body {
     margin-bottom: 1rem;
   }
   
+  #saveForLater {
+    width: 100px;
+    height:100px;
+  }
+
   #video {
     margin-top: 1rem;
   }

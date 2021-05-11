@@ -43,58 +43,102 @@ function timeToString(time) {
       video.load();
       console.log(j);
     }
-    if (formattedMM === "00" && formattedSS === "01" && formattedMS === "10"){
+    if (formattedMM === "00" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }
-    if (formattedMM === "00" && formattedSS === "02" && formattedMS === "10"){
+    if (formattedMM === "01" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "03" && formattedMS === "10"){
+    if (formattedMM === "01" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "04" && formattedMS === "10"){
+    if (formattedMM === "02" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "05" && formattedMS === "10"){
+    if (formattedMM === "02" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "06" && formattedMS === "10"){
+    if (formattedMM === "03" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "07" && formattedMS === "10"){
+    if (formattedMM === "03" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "08" && formattedMS === "10"){
+    if (formattedMM === "04" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "09" && formattedMS === "10"){
+    if (formattedMM === "04" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "10" && formattedMS === "10"){
+    if (formattedMM === "05" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "11" && formattedMS === "10"){
+    if (formattedMM === "05" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "12" && formattedMS === "10"){
+    if (formattedMM === "06" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
-    if (formattedMM === "00" && formattedSS === "13" && formattedMS === "10"){
+    if (formattedMM === "06" && formattedSS === "30" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }
+    if (formattedMM === "07" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
+    if (formattedMM === "07" && formattedSS === "30" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }     if (formattedMM === "08" && formattedSS === "00" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }    
+    if (formattedMM === "08" && formattedSS === "30" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }     if (formattedMM === "09" && formattedSS === "00" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }    
+    if (formattedMM === "09" && formattedSS === "30" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }     if (formattedMM === "10" && formattedSS === "00" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }    
+    if (formattedMM === "10" && formattedSS === "30" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }     if (formattedMM === "11" && formattedSS === "00" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }    
+    if (formattedMM === "11" && formattedSS === "30" && formattedMS === "10"){
+      changeCurrentTech();
+      nextVideo();
+    }
+    if (formattedMM === "12" && formattedSS === "00" && formattedMS === "10"){
+      currentTech.innerHTML = "Practice the Tech you frequently missed for 3 minutes";
+      video.pause();
+    }
+    if (formattedMM === "15" && formattedSS === "00" && formattedMS === "00"){
+      currentTech.innerHTML = "Nice work!";
+      pause();
+    }
 
 
     return `${formattedMM}:${formattedSS}:${formattedMS}`;
@@ -121,10 +165,55 @@ function timeToString(time) {
   const tech12 = document.querySelector("#tech12");
   const tech13 = document.querySelector("#tech13");
   const tech14 = document.querySelector("#tech14");
+  const tech15 = document.querySelector("#tech15");
+  const tech16 = document.querySelector("#tech16");
+  const tech17 = document.querySelector("#tech17");
+  const tech18 = document.querySelector("#tech18");
+  const tech19 = document.querySelector("#tech19");
+  const tech20 = document.querySelector("#tech20");
+  const tech21 = document.querySelector("#tech21");
+  const tech22 = document.querySelector("#tech22");
+  const tech23 = document.querySelector("#tech23");
+  const tech24 = document.querySelector("#tech24");
 
-  let techList = [tech1, tech2, tech3, tech4, tech5, tech6,  tech7, tech8, tech9, tech10, tech11, tech12, tech13, tech14]
+  let techList = [
+    tech1, 
+    tech2, 
+    tech3, 
+    tech4, 
+    tech5, 
+    tech6,  
+    tech7, 
+    tech8, 
+    tech9, 
+    tech10, 
+    tech11, 
+    tech12, 
+    tech13, 
+    tech14, 
+    tech15, 
+    tech16,
+    tech17,
+    tech18,
+    tech19,
+    tech20,
+    tech21,
+    tech22,
+    tech23,    
+    tech24,    
+  ]
 
-  let techVideos= ["https://thumbs.gfycat.com/YawningReflectingDuiker-mobile.mp4", 
+  let techVideos= [
+  "https://thumbs.gfycat.com/YawningReflectingDuiker-mobile.mp4", 
+  "https://thumbs.gfycat.com/EcstaticRedHedgehog-mobile.mp4", 
+  "https://thumbs.gfycat.com/MiserableUnfortunateAsianlion-mobile.mp4",
+  "https://thumbs.gfycat.com/YawningReflectingDuiker-mobile.mp4", 
+  "https://thumbs.gfycat.com/EcstaticRedHedgehog-mobile.mp4", 
+  "https://thumbs.gfycat.com/MiserableUnfortunateAsianlion-mobile.mp4",
+  "https://thumbs.gfycat.com/YawningReflectingDuiker-mobile.mp4", 
+  "https://thumbs.gfycat.com/EcstaticRedHedgehog-mobile.mp4", 
+  "https://thumbs.gfycat.com/MiserableUnfortunateAsianlion-mobile.mp4",
+  "https://thumbs.gfycat.com/YawningReflectingDuiker-mobile.mp4", 
   "https://thumbs.gfycat.com/EcstaticRedHedgehog-mobile.mp4", 
   "https://thumbs.gfycat.com/MiserableUnfortunateAsianlion-mobile.mp4",
   "https://thumbs.gfycat.com/YawningReflectingDuiker-mobile.mp4", 
@@ -137,7 +226,8 @@ function timeToString(time) {
   "https://thumbs.gfycat.com/EcstaticRedHedgehog-mobile.mp4", 
   "https://thumbs.gfycat.com/MiserableUnfortunateAsianlion-mobile.mp4",
   "https://thumbs.gfycat.com/YawningReflectingDuiker-mobile.mp4", 
-  "https://thumbs.gfycat.com/EcstaticRedHedgehog-mobile.mp4", 
+  "https://thumbs.gfycat.com/EcstaticRedHedgehog-mobile.mp4",
+  "https://thumbs.gfycat.com/MiserableUnfortunateAsianlion-mobile.mp4" 
   ]
 
   var video = document.getElementById('video');
@@ -175,8 +265,11 @@ function timeToString(time) {
     showButton("PLAY");
     currentTech.innerHTML = "Press Play to Start";
     video.pause();
-    j = 1;
     k = 0;
+    for(j = 1; j <= techList.length; j++){
+    techList[j-1].style.color = 'white';
+    }
+    j = 1;
   }
   
   // Create function to display buttons
@@ -198,3 +291,10 @@ function timeToString(time) {
   resetButton.addEventListener("click", reset);
 
   //Testing
+  document.getElementById("saveForLater").onclick = function (){
+    if(techList[j-1].style.color = 'white'){
+    techList[j-1].style.color = 'gold';
+    } else if (techList[j-1].style.color = 'gold'){
+      techList[j-1].style.color = 'white';
+    }
+  }
