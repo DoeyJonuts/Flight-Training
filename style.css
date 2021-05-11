@@ -17,10 +17,11 @@ body {
   nav {
     margin-bottom: 1rem;
   }
-  
+
   #saveForLater {
     width: 100px;
     height:100px;
+    background-color: white;
   }
 
   #video {
