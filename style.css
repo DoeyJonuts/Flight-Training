@@ -15,15 +15,18 @@ body {
   }
 
   nav {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
+  #video {
+    margin-top: 1rem;
+  }
+
   .stopwatch {
     display: grid;
     justify-items: center;
     grid-row-gap: 23px;
     width: 100%;
-    padding-top: 25px;
   }
   
   .circle {
@@ -41,7 +44,7 @@ body {
   .time {
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 65px;
   }
   
   .gold {
@@ -76,6 +79,6 @@ body {
   }
 
   #currentTech {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
   }
