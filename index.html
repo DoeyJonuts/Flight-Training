@@ -6,99 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link rel="icon" 
+      type="image/png" 
+      href="FalcoHeadSSBM.png"/>
+    
 
     <title>The Lombardi Timer</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">The Lombardi Timer</a>
+        <a class="navbar-brand" href="index.html">The Lombardi Timer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Read this first!<span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Timer
               </a>
               <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Ledgework</a>
-                <a class="dropdown-item" href="index.html">Everything</a>
-                <a class="dropdown-item" href="randomizer.html">Randomizer</a>
+                <a class="dropdown-item" href="standard.html">Standard</a>
+                <a class="dropdown-item" href="">Randomizer (work in progress)</a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div>
-                    <div>
-                        <ul>
-                            <li id="tech1">Dash dance</li>
-                            <li id="tech2">Wavedash </li>
-                            <li id="tech3">Waveshine</li>
-                            <li id="tech4">Late aerial shine (SHFFLs)</li>
-                            <li id="tech5">SHL in place as fast as possible</li>
-                            <li id="tech6">JC Grab</li>
-                            <li id="tech7">Wavedash OOS</li>
-                            <li id="tech8">PPMD Sequence (Laser dash forward dash back</li>
-                            <li id="tech9">Late aerial shine grab</li>
-                            <li id="tech10">Low lasers, High Lasers (control laser heights)</li>
-                            <li id="tech11">Drop through plat lasers</li>
-                            <li id="tech12">Shine OOS (waveland down)</li>
-                            <li id="tech13"> Jump waveland to plats (plat movement</li>
-                            <li id="tech14">Laser from plats w/ different timings (runoff lasers, jump off lasers)</li>
-                            <li id="tech15">Westballz Pressure</li>
-                            <li id="tech16">Shielddrop Shine</li>
-                            <li id="tech17">Laser Jump Shine waveland</li>
-                            <li id="tech18">Shorten side b's</li>
-                            <li id="tech19">Invincible Refreshes</li>
-                            <li id="tech20">Lededash (try to pick an option immediately after)</li>
-                            <li id="tech21">Low double lasers</li>
-                            <li id="tech22">High double lasers</li>
-                            <li id="tech23">Ledgehop, waveland on plat</li>
-                            <li id="tech24">Running shine turnaround wavedash back to ledge</li>
-                        </ul>
-                    </div>
-                </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card mx-auto">
+            <div class="card-body">
+              <h1 class="card-title">Read this before using the timer!!!</h1>
+              <p class="card-text">Rather than picking up your controller and immediately queueing up for Unranked games, maybe you should get a warm-up in? The <em>Lombardi Timer</em> is a tool for Falco players to quickly and conveniently run through relevant tech skill before starting to grind versus real players.</p>
+              <p class="card-text">Before using the timer, there's a few things you should note. The tool is designed to quickly run through tech skill that you are already somewhat familiar with. This tool is <strong>not</strong> meant for learning new tech for the first time. If there's specific tech on the list that you haven't performed before, you should probably take separate time outside of the timer to work on the mechanics of that tech.</p>
+              <p class="card-text">If you find yourself messing up specific tech while the timer is ticking, you can choose to highlight that tech by clicking the save icon so that it is easy to revisit during the last 3 minutes of the timer (click again to unhighlight). This is by far the most important part of regular tech skill training. You want to <strong>avoid</strong> mindlessly spamming tech skill and deliberately look for the tech you've been dropping lately so that you can focus on improving what you're bad at.</p>
+
+              <br>
+              <div class="row">
+              <div class="col-4" align="center"><span class="iconify" data-icon="bi-play-circle" data-inline="false" style="color: #fff;" data-width="3rem" data-height="3rem"></span><br><br><p class="card-text">
+                Play/Pause Button
+              </p></div>
+              <div class="col-4" align="center">
+              <span class="iconify" data-icon="fluent:arrow-reset-24-filled" data-inline="false" style="color: #fff;" data-width="3rem" data-height="3rem"></span><br><br><p class="card-text">
+                Reset Button
+              </p>
+              </div>
+              <div class="col-4" align="center"><span class="iconify" data-icon="carbon:save" data-inline="false" style="color: #fff;" data-width="3rem" data-height="3rem"></span><br><br><p class="card-text">
+                Highlight Current Tech for Later
+              </p></div>
             </div>
-            <div class="col-6">
-                <div class="row justify-content-center">
-                    <h1><span class="gold">Lombardi</span> Timer</h1>
-                    <video id="video" width="520" height="390" controls autoplay loop></video>
-                </div>
-                <div class="row">
-                    <div class="stopwatch row justify-content-center">
-                        <div>
-                        <div class="time row justify-content-center" id="display">00:00:00</div>
-                        <div class="row justify-content-center" id="currentTech">Press Play to Start</div>
-                        </div> 
-                        <div class="controls">
-                            <button class="buttonPlay">
-                                <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
-                    
-                                <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
-                            </button>
-                    
-                            <button class="buttonReset">
-                                <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
-                            </button>
-                            <button id="saveForLater">Save For Later</button>
-                        </div>
-                    </div>
-                </div>
-                <br>
             </div>
+          </div>   
         </div>
-    </div>
+      </div>
     <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>
 </html>

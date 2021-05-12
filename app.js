@@ -102,28 +102,32 @@ function timeToString(time) {
     if (formattedMM === "07" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
-    }     if (formattedMM === "08" && formattedSS === "00" && formattedMS === "10"){
+    }     
+    if (formattedMM === "08" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
     if (formattedMM === "08" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
-    }     if (formattedMM === "09" && formattedSS === "00" && formattedMS === "10"){
+    }     
+    if (formattedMM === "09" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
     if (formattedMM === "09" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
-    }     if (formattedMM === "10" && formattedSS === "00" && formattedMS === "10"){
+    }     
+    if (formattedMM === "10" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
     if (formattedMM === "10" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
-    }     if (formattedMM === "11" && formattedSS === "00" && formattedMS === "10"){
+    }     
+    if (formattedMM === "11" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
     }    
@@ -259,17 +263,19 @@ function timeToString(time) {
   }
   
   function reset() {
-    clearInterval(timerInterval);
-    print("00:00:00");
-    elapsedTime = 0;
-    showButton("PLAY");
-    currentTech.innerHTML = "Press Play to Start";
-    video.pause();
-    k = 0;
-    for(j = 1; j <= techList.length; j++){
-    techList[j-1].style.color = 'white';
-    }
-    j = 1;
+    // clearInterval(timerInterval);
+    // print("00:00:00");
+    // elapsedTime = 0;
+    // showButton("PLAY");
+    // currentTech.innerHTML = "Press Play to Start";
+    // video.pause();
+    // k = 0;
+    // for(j = 1; j <= techList.length; j++){
+    //   techList[j-1].classList.remove("goldText");
+    //   techList[j-1].classList.add("whiteText");
+    // }
+    // j = 1;
+    location.reload();
   }
   
   // Create function to display buttons
@@ -291,10 +297,14 @@ function timeToString(time) {
   resetButton.addEventListener("click", reset);
 
   //Testing
+
   document.getElementById("saveForLater").onclick = function (){
-    if(techList[j-1].style.color = 'white'){
-    techList[j-1].style.color = 'gold';
-    } else if (techList[j-1].style.color = 'gold'){
-      techList[j-1].style.color = 'white';
-    }
+    if(techList[j-1].classList.contains('whiteText')){
+    techList[j-1].classList.remove("whiteText");
+    techList[j-1].classList.add("goldText");
+    } else if(techList[j-1].classList.contains('goldText')){
+      techList[j-1].classList.remove("goldText");
+      techList[j-1].classList.add("whiteText");
+      }
+  
   }

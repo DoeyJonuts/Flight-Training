@@ -5,7 +5,7 @@ body {
   
   h1 {
     font-size: 48px;
-    font-weight: 200;
+    font-weight: 600;
   
     text-align: center;
     line-height: 59px;
@@ -15,17 +15,29 @@ body {
   }
 
   nav {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
-  #saveForLater {
-    width: 100px;
-    height:100px;
-    background-color: white;
+  li {
+    font-size: 20px;
   }
 
-  #video {
-    margin-top: 1rem;
+  .card {
+    background-color: #363c50;
+    max-width: 80%;
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+  .card-text {
+    text-indent: 5%;
+    font-size: 20px;
+  }
+
+  .legend {
+    justify-content: center;
   }
 
   .stopwatch {
@@ -56,8 +68,8 @@ body {
   .gold {
     font-weight: 900;
   
-    color: #2040b4;
-    text-shadow: 0 0 0px #2040b4, 0 0 50px #2040b4;
+    color: #fff;
+    text-shadow: 0 0 0px #fff, 0 0 50px #fff;
   }
   
   .controls {
@@ -85,6 +97,19 @@ body {
   }
 
   #currentTech {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
   }
+
+  .whiteText {
+    color: white;
+  }
+  .goldText {
+    color: gold;
+  }
+
+  .dropdown-item {
+    color: white;
+  }
+
+  
