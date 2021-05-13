@@ -46,102 +46,127 @@ function timeToString(time) {
     if (formattedMM === "00" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }
     if (formattedMM === "01" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "01" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "02" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "02" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "03" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "03" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "04" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "04" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "05" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "05" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "06" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "06" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }
     if (formattedMM === "07" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "07" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }     
     if (formattedMM === "08" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "08" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }     
     if (formattedMM === "09" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "09" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }     
     if (formattedMM === "10" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "10" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }     
     if (formattedMM === "11" && formattedSS === "00" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }    
     if (formattedMM === "11" && formattedSS === "30" && formattedMS === "10"){
       changeCurrentTech();
       nextVideo();
+      console.log(formattedMM + formattedSS + formattedMS);
     }
     if (formattedMM === "12" && formattedSS === "00" && formattedMS === "10"){
       currentTech.innerHTML = "Practice the Tech you frequently missed for 3 minutes";
       video.pause();
+      console.log(formattedMM + formattedSS + formattedMS);
     }
     if (formattedMM === "15" && formattedSS === "00" && formattedMS === "00"){
       currentTech.innerHTML = "Nice work!";
       pause();
+      console.log(formattedMM + formattedSS + formattedMS);
     }
 
 

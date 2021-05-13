@@ -24,7 +24,12 @@ body {
 
   .card {
     background-color: #363c50;
-    max-width: 80%;
+    max-width: 90%;
+  }
+
+  .training {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .card-title {
