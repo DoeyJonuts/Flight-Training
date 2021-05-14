@@ -178,7 +178,7 @@ function start() {
   timerInterval = setInterval(function printTime() {
     elapsedTime = Date.now() - startTime
     print(timeToString(elapsedTime))
-    if(elapsedTime === 1500){
+    if(elapsedTime === 150000){
       pause();
       return console.log("15 minutes have passed.");
     }
