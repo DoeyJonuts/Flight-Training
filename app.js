@@ -78,6 +78,7 @@ const tech21 = document.querySelector("#tech21");
 const tech22 = document.querySelector("#tech22");
 const tech23 = document.querySelector("#tech23");
 const tech24 = document.querySelector("#tech24");
+const tech25 = document.querySelector("#tech25");
 
 let techList = [
   tech1, 
