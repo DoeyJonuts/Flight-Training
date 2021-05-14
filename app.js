@@ -1,12 +1,12 @@
 let techVideos = [
-  'techVideos/Dashdancing.mp4',
+  'techVideos/DashDanceWaveDash.mp4',
   'techVideos/Waveshine.mp4',
   'techVideos/WavedashOOS.mp4',
   'techVideos/SHFFLs.mp4',
+  'techVideos/SpacedAerials.mp4',
   'techVideos/FastSHL.mp4',
   'techVideos/LowLaserHighLaser.mp4',
   'techVideos/FullhopLasers.mp4',
-  'techVideos/DropThroughLasers.mp4',
   'techVideos/DropThroughLasers.mp4',
   'techVideos/PlatLasers.mp4',
   'techVideos/ShineOOS.mp4',
@@ -20,6 +20,7 @@ let techVideos = [
   'techVideos/Up-BAngles.mp4',
   'techVideos/LedgeRefresh.mp4',
   'techVideos/Ledgedash.mp4',
+  'techVideos/DoubleLasers.mp4',
   'techVideos/LedgehopWaveland.mp4',
   'techVideos/ShineTurnaroundWavedashBacktoLedge.mp4',
 ]
