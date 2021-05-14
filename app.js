@@ -140,7 +140,7 @@ function timeToString(time) {
     conditonInt++
   }
 
-  if (mm === 15 && ss === 00) {
+  if (mm === 15 && ss === 0) {
     console.log("End");
     pause();
   }
@@ -178,6 +178,10 @@ function start() {
   timerInterval = setInterval(function printTime() {
     elapsedTime = Date.now() - startTime
     print(timeToString(elapsedTime))
+    if(elapsedTime === 1500){
+      pause();
+      return console.log("15 minutes have passed.");
+    }
   }, 10)
   showButton('PAUSE')
 }
