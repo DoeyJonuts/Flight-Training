@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" 
+      type="image/png" 
+      href="FalcoHeadSSBM.png"/>
+
+    <title>Flight Training</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Flight Training</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Timer
+              </a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="standard.html">Standard</a>
+                <a class="dropdown-item" href="">Randomizer (in progress)</a>
+                <a class="dropdown-item" href="">Ledgework (in progress)</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container card training">
+        <div class="row">
+            <div class="col-6 bottom">
+              <ul>
+                  <li class="whiteText" id="tech1">Dash dance and Wavedash from one side of the stage to the other</li>
+                  <li class="whiteText" id="tech2">Waveshine</li>
+                  <li class="whiteText" id="tech3">Wavedash OOS</li>
+                  <li class="whiteText" id="tech4">Low SHFFL Shine and Shine Grab</li>
+                  <li class="whiteText" id="tech5">Spaced Aerials outside of Shield Grab range</li>
+                  <li class="whiteText" id="tech6">SHL in place as fast as possible</li>
+                  <li class="whiteText" id="tech7">Low lasers, High Lasers (control laser heights)</li>
+                  <li class="whiteText" id="tech8">Different full hop laser heights</li>
+                  <li class="whiteText" id="tech9">Drop through plat lasers</li>
+                  <li class="whiteText" id="tech10">Laser from plats w/ different timings (runoff lasers, jump off lasers)</li>
+                  <li class="whiteText" id="tech11">Shine OOS (waveland down)</li>
+                  <li class="whiteText" id="tech12">Jump waveland to plats, shield drop, wavedash OOS off plats (general plat movement)</li>
+                  <li class="whiteText" id="tech13">Jump Shine Waveland</li>
+                  <li class="whiteText" id="tech14">Westballz Pressure</li>
+                  <li class="whiteText" id="tech15">Shielddrop Shine</li>
+                  <li class="whiteText" id="tech16">Laser Jump Shine waveland</li>
+                  <li class="whiteText" id="tech17">Shorten Side-B</li>
+                  <li class="whiteText" id="tech18">Side-B Sweetspot</li>
+                  <li class="whiteText" id="tech19">Different Up-B Angles</li>
+                  <li class="whiteText" id="tech20">Invincible Refreshes</li>
+                  <li class="whiteText" id="tech21">Lededash (try to pick an option immediately after)</li>
+                  <li class="whiteText" id="tech22">Double lasers (high and low)</li>
+                  <li class="whiteText" id="tech23">Ledgehop, waveland on plat</li>
+                  <li class="whiteText" id="tech24">Running shine turnaround wavedash back to ledge</li>
+              </ul>
+            </div>
+            <div class="col-6 top">
+                <div class="row justify-content-center">
+                    <h1><span class="gold">Flight</span> Training</h1>
+                    <video id="video" width="520" height="390" controls autoplay loop></video>
+                </div>
+                <div class="row">
+                    <div class="stopwatch row justify-content-center">
+                        <div>
+                        <div class="time row justify-content-center" id="display">00:00:00</div>
+                        <div class="row justify-content-center" id="currentTech">Click play to start!</div>
+                        </div> 
+                        <div class="controls row">
+                            <button class="buttonPlay">
+                              <button id="playButton"><span class="iconify" data-icon="bi-play-circle" data-inline="false" style="color: #fff;" data-width="3rem" data-height="3rem"></span>
+                              </button>
+                              <button id="pauseButton"><span class="iconify" data-icon="ant-design:pause-circle-outlined" data-inline="false" style="color: #fff;" data-width="3.5rem" data-height="3.5rem"></span>
+                              </button>
+                            </button>
+                            <button class="buttonReset">
+                              <button id="resetButton"><span class="iconify" data-icon="fluent:arrow-reset-24-filled" data-inline="false" style="color: #fff;" data-width="3rem" data-height="3rem"></span>
+                              </button>
+                            </button>
+                            <button id="saveForLater"><span class="iconify" data-icon="carbon:save" data-inline="false" style="color: #fff;" data-width="3rem" data-height="3rem"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>
