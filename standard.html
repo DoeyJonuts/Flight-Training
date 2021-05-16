@@ -53,21 +53,37 @@
       </div>
     </nav>
     <div class="container card training">
-      <div class="row">
-        <div class="col-6 bottom">
+      <div class="" id="main-container">
+        <div class="bottom">
           <ol type="1">
-            <li class="whiteText" id="tech1">Dash dance and Wavedash from one side of the stage to the other</li>
+            <li class="whiteText" id="tech1">
+              Dash dance and Wavedash from one side of the stage to the other
+            </li>
             <li class="whiteText" id="tech2">Waveshine</li>
             <li class="whiteText" id="tech3">Wavedash OOS</li>
             <li class="whiteText" id="tech4">Low SHFFL Shine and Shine Grab</li>
-            <li class="whiteText" id="tech5">Spaced Aerials outside of Shield Grab range</li>
-            <li class="whiteText" id="tech6">SHL in place as fast as possible</li>
-            <li class="whiteText" id="tech7">Low lasers, High Lasers (control laser heights)</li>
-            <li class="whiteText" id="tech8">Different full hop laser heights</li>
+            <li class="whiteText" id="tech5">
+              Spaced Aerials outside of Shield Grab range
+            </li>
+            <li class="whiteText" id="tech6">
+              SHL in place as fast as possible
+            </li>
+            <li class="whiteText" id="tech7">
+              Low lasers, High Lasers (control laser heights)
+            </li>
+            <li class="whiteText" id="tech8">
+              Different full hop laser heights
+            </li>
             <li class="whiteText" id="tech9">Drop through plat lasers</li>
-            <li class="whiteText" id="tech10">Laser from plats w/ different timings (runoff lasers, jump off lasers)</li>
+            <li class="whiteText" id="tech10">
+              Laser from plats w/ different timings (runoff lasers, jump off
+              lasers)
+            </li>
             <li class="whiteText" id="tech11">Shine OOS (waveland down)</li>
-            <li class="whiteText" id="tech12">Jump waveland to plats, shield drop, wavedash OOS off plats (general plat movement)</li>
+            <li class="whiteText" id="tech12">
+              Jump waveland to plats, shield drop, wavedash OOS off plats
+              (general plat movement)
+            </li>
             <li class="whiteText" id="tech13">Jump Shine Waveland</li>
             <li class="whiteText" id="tech14">Westballz Pressure</li>
             <li class="whiteText" id="tech15">Shielddrop Shine</li>
@@ -76,19 +92,33 @@
             <li class="whiteText" id="tech18">Side-B Sweetspot</li>
             <li class="whiteText" id="tech19">Different Up-B Angles</li>
             <li class="whiteText" id="tech20">Invincible Refreshes</li>
-            <li class="whiteText" id="tech21">Lededash (try to pick an option immediately after)</li>
-            <li class="whiteText" id="tech22">Double lasers (different heights)</li>
+            <li class="whiteText" id="tech21">
+              Lededash (try to pick an option immediately after)
+            </li>
+            <li class="whiteText" id="tech22">
+              Double lasers (different heights)
+            </li>
             <li class="whiteText" id="tech23">Ledgehop, waveland on plat</li>
-            <li class="whiteText" id="tech24">Running shine turnaround wavedash back to ledge</li>
-            <li class="whiteText"
-            id="tech25">Revisit the tech you've highlighted until the 15 minute mark.</li>
-    </ol>
+            <li class="whiteText" id="tech24">
+              Running shine turnaround wavedash back to ledge
+            </li>
+            <li class="whiteText" id="tech25">
+              Revisit the tech you've highlighted until the 15 minute mark.
+            </li>
+          </ol>
         </div>
-        <div class="col-6 top">
-          <div class="row justify-content-center">
-            <h1><span class="gold">Flight</span> Training</h1>
-            <video id="video" width="520" height="390" controls autoplay loop>
-              <source id="source" type="video/mp4" />
+        <div class="top">
+          <div class="video-container">
+            <h1 class="main-heading">
+              <span class="gold">Flight</span> Training
+            </h1>
+
+            <video id="video" controls autoplay loop>
+              <source
+                id="source"
+                type="video/mp4"
+                src="techVideos/ShineTurnaroundWavedashBacktoLedge.mp4"
+              />
             </video>
           </div>
           <div class="row">
@@ -102,48 +132,31 @@
                 </div>
               </div>
               <div class="controls row">
-                <button class="buttonPlay">
-                  <button id="playButton">
-                    <span
-                      class="iconify"
-                      data-icon="bi-play-circle"
-                      data-inline="false"
-                      style="color: #fff"
-                      data-width="3rem"
-                      data-height="3rem"
-                    ></span>
-                  </button>
-                  <button id="pauseButton">
-                    <span
-                      class="iconify"
-                      data-icon="ant-design:pause-circle-outlined"
-                      data-inline="false"
-                      style="color: #fff"
-                      data-width="3.5rem"
-                      data-height="3.5rem"
-                    ></span>
-                  </button>
+                <button id="playButton">
+                  <span
+                    class="iconify control-icon"
+                    data-icon="bi-play-circle"
+                  ></span>
                 </button>
-                <button class="buttonReset">
-                  <button id="resetButton">
-                    <span
-                      class="iconify"
-                      data-icon="fluent:arrow-reset-24-filled"
-                      data-inline="false"
-                      style="color: #fff"
-                      data-width="3rem"
-                      data-height="3rem"
-                    ></span>
-                  </button>
+
+                <button id="pauseButton">
+                  <span
+                    class="iconify control-icon"
+                    data-icon="ant-design:pause-circle-outlined"
+                  ></span>
+                </button>
+
+                <button class="buttonReset" id="resetButton">
+                  <span
+                    class="iconify control-icon"
+                    data-icon="fluent:arrow-reset-24-filled"
+                  ></span>
                 </button>
                 <button id="saveForLater">
                   <span
-                    class="iconify"
+                    class="iconify control-icon"
                     data-icon="carbon:save"
                     data-inline="false"
-                    style="color: #fff"
-                    data-width="3rem"
-                    data-height="3rem"
                   ></span>
                 </button>
               </div>

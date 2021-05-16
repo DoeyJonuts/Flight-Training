@@ -1,120 +1,209 @@
 body {
-    background-color: #21242e;
-    color: #ffffff;
-  }
-  
-  h1 {
-    font-size: 48px;
-    font-weight: 600;
-  
-    text-align: center;
-    line-height: 59px;
-  
-    padding: 0 64px;
-    margin: 0;
+  background-color: #21242e;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+
+  text-align: center;
+  line-height: 59px;
+
+  padding: 0 64px;
+  margin: 0;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+li {
+  font-size: 1.2rem;
+}
+
+.card {
+  background-color: #363c50;
+  max-width: 90%;
+}
+
+.training {
+  /* padding-top: 2rem; */
+  /* padding-bottom: 2rem; */
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-indent: 5%;
+  font-size: 20px;
+}
+
+.legend {
+  justify-content: center;
+}
+
+.stopwatch {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 23px;
+  width: 100%;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 270px;
+  width: 270px;
+
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+.time {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 65px;
+}
+
+.gold {
+  font-weight: 900;
+
+  color: #fff;
+  text-shadow: 0 0 0px #fff, 0 0 50px #fff;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+
+  width: 187px;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+
+#playButton {
+  display: block;
+}
+
+#pauseButton {
+  display: none;
+}
+
+#currentTech {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.whiteText {
+  color: white;
+}
+.goldText {
+  color: gold;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+/* #video {
+  width: 520px;
+  height: 390;
+} */
+
+/*========= arjun============= */
+
+#main-container {
+  display: flex;
+  margin: 0.4em;
+}
+
+#main-container > div:first-child {
+  flex-shrink: 1;
+}
+
+#main-container > div:last-child {
+  border-bottom: 1px solid rgb(114, 121, 118);
+  margin-bottom: 1em;
+}
+
+.main-heading {
+  margin: 0.7em 0;
+}
+
+#video {
+  width: 80%;
+  max-width: 700px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control-icon {
+  width: 3rem;
+  height: 3rem;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1000px) {
+  .main-heading {
+    font-size: 1.6rem;
   }
 
-  nav {
-    margin-bottom: 2rem;
+  #display {
+    font-size: 3rem;
   }
-
-  li {
-    font-size: 20px;
-  }
-
-  .card {
-    background-color: #363c50;
-    max-width: 90%;
-  }
-
-  .training {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .card-title {
-    text-align: center;
-  }
-
-  .card-text {
-    text-indent: 5%;
-    font-size: 20px;
-  }
-
-  .legend {
-    justify-content: center;
-  }
-
-  .stopwatch {
-    display: grid;
-    justify-items: center;
-    grid-row-gap: 23px;
-    width: 100%;
-  }
-  
-  .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    height: 270px;
-    width: 270px;
-  
-    border: 2px solid;
-    border-radius: 50%;
-  }
-  
-  .time {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 300;
-    font-size: 65px;
-  }
-  
-  .gold {
-    font-weight: 900;
-  
-    color: #fff;
-    text-shadow: 0 0 0px #fff, 0 0 50px #fff;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: space-between;
-  
-    width: 187px;
-  }
-  
-  button {
-    cursor: pointer;
-    background: transparent;
-    padding: 0;
-    border: none;
-    margin: 0;
-    outline: none;
-  }
-  
-  #playButton {
-    display: block;
-  }
-  
-  #pauseButton {
-    display: none;
-  }
-
   #currentTech {
+    font-size: 1.5rem;
+  }
+
+  .control-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #video {
+    width: 95%;
+  }
+
+  #display {
     font-size: 2rem;
-    text-align: center;
+  }
+  #currentTech {
+    font-size: 1.2rem;
   }
 
-  .whiteText {
-    color: white;
-  }
-  .goldText {
-    color: gold;
+  .control-icon {
+    width: 2rem;
+    height: 2rem;
   }
 
-  .dropdown-item {
-    color: white;
+  #main-container {
+    flex-direction: column;
   }
 
-  
+  #main-container > div:first-child {
+    order: 1;
+  }
+}
+@media screen and (max-width: 780px) {
+  .main-heading {
+    font-size: 1.3rem;
+  }
+}
