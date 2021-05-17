@@ -92,6 +92,11 @@ body {
   
     width: 187px;
   }
+
+  .homepage {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
   
   button {
     cursor: pointer;
