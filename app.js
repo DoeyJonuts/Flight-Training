@@ -2,19 +2,19 @@ let techVideos = [
   'techVideos/DashDanceWaveDash.mp4',
   'techVideos/Waveshine.mp4',
   'techVideos/WavedashOOS.mp4',
-  'techVideos/SHFFLs.mp4',
   'techVideos/SpacedAerials.mp4',
   'techVideos/FastSHL.mp4',
   'techVideos/LowLaserHighLaser.mp4',
   'techVideos/FullhopLasers.mp4',
   'techVideos/DropThroughLasers.mp4',
   'techVideos/PlatLasers.mp4',
+  'techVideos/SHFFLs.mp4',
+  'techVideos/WestballzShines.mp4',
   'techVideos/ShineOOS.mp4',
+  'techVideos/LaserJumpShine.mp4',
   'techVideos/PlatMovement.mp4',
   'techVideos/ShineWaveland.mp4',
-  'techVideos/WestballzShines.mp4',
   'techVideos/ShielddropShine.mp4',
-  'techVideos/LaserJumpShine.mp4',
   'techVideos/Side-BShorten.mp4',
   'techVideos/Side-BSweetspot.mp4',
   'techVideos/Up-BAngles.mp4',
@@ -229,3 +229,5 @@ document.getElementById('saveForLater').onclick = function () {
     techList[current_state - 1].classList.add('whiteText')
   }
 }
+
+let

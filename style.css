@@ -22,6 +22,11 @@ body {
     font-size: 20px;
   }
 
+  .column {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .card {
     background-color: #363c50;
     max-width: 90%;
@@ -52,7 +57,7 @@ body {
     width: 100%;
   }
   
-  .circle {
+  .circle  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,11 +68,15 @@ body {
     border: 2px solid;
     border-radius: 50%;
   }
-  
+
   .time {
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
     font-size: 65px;
+  }
+
+  .swap {
+    font-size: 1.2rem;
   }
   
   .gold {
@@ -92,6 +101,11 @@ body {
     margin: 0;
     outline: none;
   }
+
+  .row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   
   #playButton {
     display: block;
@@ -102,7 +116,7 @@ body {
   }
 
   #currentTech {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
   }
 
